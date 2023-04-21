@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Img\close-window.png" />
+    <None Remove="Assets\Img\dstu.jpg" />
+    <None Remove="Assets\Img\eng.png" />
+    <None Remove="Assets\Img\Lance.jpg" />
+    <None Remove="Assets\Img\ua.png" />
+    <None Remove="Assets\Img\window-maximize-16.png" />
+    <None Remove="Assets\Img\window-minimize-1-16.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Img\dstu.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\Theme\" />
+    <Folder Include="Lang\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit">
+      <HintPath>C:\Users\Nikita\Downloads\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit">
+      <HintPath>C:\Users\Nikita\Downloads\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Img\close-window.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\eng.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\Lance.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\ua.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\window-maximize-16.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\window-minimize-1-16.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
