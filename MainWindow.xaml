@@ -131,13 +131,16 @@
                 <Label Grid.Row="2" Grid.Column="0" Content="Витрати води:" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"/>
                 <Label Grid.Row="3" Grid.Column="0" Content="Температура води:" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"/>
                 <Label Grid.Row="4" Grid.Column="0" Content="Час процесу:" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12"/>
-                
-                <TextBox Grid.Row="1" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                    <RadioButton Content="219" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                    <RadioButton Content="426" VerticalAlignment="Center"/>
+                </StackPanel>
                 <TextBox Grid.Row="2" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <TextBox Grid.Row="3" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <TextBox Grid.Row="4" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             </Grid>
-            <Button Content="Старт" Grid.Column="1" Width="120" Height="120" FontSize="25">
+            <Button Content="Старт" Grid.Column="1"  Width="90" Height="90" FontSize="20">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="BorderThickness" Value="5"/>
@@ -159,7 +162,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button Content="Cтоп" Grid.Column="2" Width="120" Height="120" FontSize="25">
+            <Button Content="Cтоп" Grid.Column="2"  Width="90" Height="90" FontSize="20">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="BorderThickness" Value="5"/>
@@ -181,7 +184,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button Content="Довідка" Grid.Column="3" Width="120" Height="120" FontSize="25">
+            <Button Content="Довідка" Grid.Column="3"  Width="90" Height="90" FontSize="20">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="BorderThickness" Value="5"/>
@@ -203,7 +206,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button Content="Вихід" Grid.Column="4" Width="120" Height="120" FontSize="25">
+            <Button Content="Вихід" Grid.Column="4"  Width="90" Height="90" FontSize="20">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="BorderThickness" Value="5"/>
