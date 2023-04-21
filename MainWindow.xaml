@@ -109,9 +109,6 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300"/>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <!--Вхідні дані-->
             <Grid Grid.Column="0">
@@ -140,94 +137,21 @@
                 <TextBox Grid.Row="3" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <TextBox Grid.Row="4" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             </Grid>
-            <Button Content="Старт" Grid.Column="1"  Width="90" Height="90" FontSize="20">
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="BorderThickness" Value="5"/>
-                        <Setter Property="BorderBrush" Value="Black"/>
-                        <Setter Property="Background" Value="#d9ead3"/>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="Button">
-                                    <Grid>
-                                        <Ellipse Fill="{TemplateBinding Background}"
-                                     Stroke="{TemplateBinding BorderBrush}"
-                                     StrokeThickness="{TemplateBinding BorderThickness}"/>
-                                        <ContentPresenter HorizontalAlignment="Center"
-                                                  VerticalAlignment="Center"/>
-                                    </Grid>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </Button.Style>
-            </Button>
-            <Button Content="Cтоп" Grid.Column="2"  Width="90" Height="90" FontSize="20">
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="BorderThickness" Value="5"/>
-                        <Setter Property="BorderBrush" Value="Black"/>
-                        <Setter Property="Background" Value="#f4cccc"/>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="Button">
-                                    <Grid>
-                                        <Ellipse Fill="{TemplateBinding Background}"
-                                     Stroke="{TemplateBinding BorderBrush}"
-                                     StrokeThickness="{TemplateBinding BorderThickness}"/>
-                                        <ContentPresenter HorizontalAlignment="Center"
-                                                  VerticalAlignment="Center"/>
-                                    </Grid>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </Button.Style>
-            </Button>
-            <Button Content="Довідка" Grid.Column="3"  Width="90" Height="90" FontSize="20">
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="BorderThickness" Value="5"/>
-                        <Setter Property="BorderBrush" Value="Black"/>
-                        <Setter Property="Background" Value="#cfe2f3"/>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="Button">
-                                    <Grid>
-                                        <Ellipse Fill="{TemplateBinding Background}"
-                                     Stroke="{TemplateBinding BorderBrush}"
-                                     StrokeThickness="{TemplateBinding BorderThickness}"/>
-                                        <ContentPresenter HorizontalAlignment="Center"
-                                                  VerticalAlignment="Center"/>
-                                    </Grid>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </Button.Style>
-            </Button>
-            <Button Content="Вихід" Grid.Column="4"  Width="90" Height="90" FontSize="20">
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="BorderThickness" Value="5"/>
-                        <Setter Property="BorderBrush" Value="Black"/>
-                        <Setter Property="Background" Value="#fff2cc"/>
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="Button">
-                                    <Grid>
-                                        <Ellipse Fill="{TemplateBinding Background}"
-                                     Stroke="{TemplateBinding BorderBrush}"
-                                     StrokeThickness="{TemplateBinding BorderThickness}"/>
-                                        <ContentPresenter HorizontalAlignment="Center"
-                                                  VerticalAlignment="Center"/>
-                                    </Grid>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </Button.Style>
-            </Button>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="19*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Content="Старт" Grid.Column="0" Grid.Row="0"  Width="180" Height="40" FontSize="20" Background="LightGreen"/>
+                <Button Content="Cтоп" Grid.Column="0" Grid.Row="1"  Width="180" Height="40" FontSize="20" Background="LightPink"/>
+                <Button Content="Довідка" Grid.Column="1" Grid.Row="0"  Width="180" Height="40" FontSize="20" Background="LightBlue"/>
+                <Button Content="Вихід" Grid.Column="1" Grid.Row="1"  Width="180" Height="40" FontSize="20" Background="LightYellow"/>
+            </Grid>
         </Grid>
         <!--Відображення-->
         <Grid Grid.Row="2" VerticalAlignment="Top">
